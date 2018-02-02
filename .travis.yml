@@ -14,25 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-root = true
 
-[*]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
-indent_style = space
+language: java
 
-[*.java]
-indent_size = 4
+jdk:
+  - oraclejdk8
 
-[*.yaml]
-indent_size = 2
+after_success:
+  - mvn -PEnableReportPlugins coveralls:report
 
-[*.xml]
-indent_size = 2
-
-# Tab indentation (no size specified)
-[Makefile]
-indent_style = tab
-
+cache:
+  directories:
+    - '$HOME/.m2/repository'
