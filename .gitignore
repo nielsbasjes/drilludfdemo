@@ -1,0 +1,64 @@
+#Antlr4
+gen
+
+#Maven
+dependency-reduced-pom.xml
+
+#Crashing eclipse
+hs_err_pid*.log
+tmp
+debug-output
+output
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+target
+*.bak
+*.swp
+*~
+bin
+
+#Eclipse stuff
+.metadata
+.settings
+.classpath
+.project
+
+#IntelliJ stuff
+.idea
+*.iml
+
+#test files
+x
+xx
+y
+yy
+z
+zz
+result-*.yaml
+
+# Patches related
+*.patch
+*.diff
+*.orig
+*.rej
+
+# Apache Pig logfiles
+pig_[1-9][0-9]*.log
+
+# Generated benchmark results
+benchmarks/*.txt
+benchmarks/*.csv
+
+
+# Local test files and scripts
+testfiles
+/*.sh
+_*
+*.tar.gz
+
+# LibreOffice lock file
+.~lock.*
